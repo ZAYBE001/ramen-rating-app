@@ -1,0 +1,25 @@
+body {background-color: antiquewhite;}
+h1 {color: rgba(233, 162, 9, 0.877);
+    text-align: center;
+     margin: 20px;
+     padding-top: 20px;
+}
+img { display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+div { display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     padding-top: 20px;
+}
+
+form { display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     padding-top: 20px;
+}
