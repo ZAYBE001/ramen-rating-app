@@ -4,7 +4,13 @@ h1 {color: rgba(233, 162, 9, 0.877);
      margin: 20px;
      padding-top: 20px;
 }
-img { display: flex;
+img { display: flex-box;
+     margin: 20px;
+     padding-top: 20px;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     align-items: center;
      flex-direction: row;
      justify-content: center;
 }
