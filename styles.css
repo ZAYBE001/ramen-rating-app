@@ -1,4 +1,4 @@
-body {background-color: antiquewhite;}
+body {background-color: rgb(241, 231, 218);}
 h1 {color: rgba(233, 162, 9, 0.877);
     text-align: center;
      margin: 20px;
@@ -7,15 +7,15 @@ h1 {color: rgba(233, 162, 9, 0.877);
 img { display: flex-box;
      margin: 20px;
      padding-top: 20px;
-     width: 200px;
-     height: 200px;
+     width: 220px;
+     height: 220px;
      border-radius: 60px;
      align-items: center;
      flex-direction: row;
      justify-content: center;
 }
 div { display: flex;
-     flex-direction: column;
+     flex-direction: row;
      justify-content: center;
      align-items: center;
      margin: 20px;
@@ -28,4 +28,11 @@ form { display: flex;
      align-items: center;
      margin: 20px;
      padding-top: 20px;
+}
+button { display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: 5px;
+     padding-top: 5px 10px;
 }
