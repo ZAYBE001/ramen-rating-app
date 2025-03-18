@@ -19,37 +19,32 @@
         <img src="./Meat & baked potatoes.jpeg" alt="meat & baked potatoes" title="Meat & roasted potatoes">
         <img src="./pilau & roasted chicken.jpeg" alt="pilau & roasted chicken" title="Pilau & roasted chicken ">
     </div> 
-        <nav>Ramen Rater</nav>
 
-    <div id="ramen-menu">
+<h1>Ramen Rater</h1>
 
-    </div>
-    <div id="ramen-detail">
-        
-   </div>
-   <div id="form">
+<div id="Ramen-menu"></div>
+<div id="ramen-detail">
+    <img class="detail-image" src="" alt="Ramen image">
+    <h2 class="name"></h2>
+    <h3 class="restaurant"></h3>
+    <p class="rating"></p>
+    <p class="comment"></p>
     <form id="edit-ramen" style="display: none;">
         <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5">
         <input type="text" name="comment" placeholder="Comment">
         <button type="submit">Save</button>
     </form>
-   <form action="submission">
-        <h3>Add New Ramen</h3>
-        <label>Name</label>
+    <form id="new-ramen">
+        <h2>Add New Ramen</h2>
+        <label for="name">Name</label>
         <input type="text" name="name" placeholder="Ramen Name" required>
-        <label >Restaurant</label>
+        <label for="restaurant">Restaurant</label>
         <input type="text" name="restaurant" placeholder="Restaurant" required>
-        <label>Image</label>
+        <label for="image">Image</label>
         <input type="text" name="image" placeholder="Image URL" required>
-        <label>Rating</label>
+        <label for="rating">Rating</label>
         <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5">
-        <label>Comment</label>
+        <label for="comment">Comment</label>
         <input type="text" name="comment" placeholder="Comment">
         <button type="submit">Add Ramen</button>
-   </form>
-</div>
-    
-         <script src="./index.js" ></script>
-    </body>
-
-</html>
+    </form>
