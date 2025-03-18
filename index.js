@@ -12,7 +12,7 @@ const ramens = [
     
     function displayRamens() {
         const menu = document.getElementById('ramen-menu');
-        menu.innerHTML = '';
+        
         ramens.forEach(ramen => {
             const img = document.createElement('img');
             img.src = ramen.image;
