@@ -1,9 +1,12 @@
 const express = require('express');
 
 const ramens = [
-    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "shoyu.jpg", rating: 5, comment: "Delicious!" },
-    { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "miso.jpg", rating: 4, comment: "Very flavorful!" },
-    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "tonkotsu.jpg" }]
+    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image:"/home/qilma/code_challenge/ramen-rating-app/shoyu.jpg", rating: 5, comment: "Delicious!" },
+    { id: 2, name: "meat & baked potaoes", restaurant: "Menya", image: "/home/qilma/code_challenge/ramen-rating-app/Meat & baked potatoes.jpeg", rating: 4, comment: "Very flavorful!" },
+    { id: 3, name: "naruto", restaurant: "Ramen-ya", image: "/home/qilma/code_challenge/ramen-rating-app/naruto.jpg" , rating: 3, comment: "Good, but not great" },
+    { id: 4, name: "kojiro", restaurant: "Ramen-ya", image: "/home/qilma/code_challenge/ramen-rating-app/kojiro.jpg " ,rating:5 ,comment:"nice dish"},
+    {id: 5, name: "nirvana", restaurant: "Ramen-ya", image:"/home/qilma/code_challenge/ramen-rating-app/nirvana.jpg" ,rating: 3, comment: "nice, but not great" }
+ ]
     
    
     
