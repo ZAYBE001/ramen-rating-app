@@ -3,7 +3,10 @@ const express = require('express');
 const ramens = [
     { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image:"/home/qilma/code_challenge/ramen-rating-app/shoyu.jpg", rating: 5, comment: "Delicious!" },
     { id: 2, name: "meat & baked potaoes", restaurant: "Menya", image: "/home/qilma/code_challenge/ramen-rating-app/Meat & baked potatoes.jpeg", rating: 4, comment: "Very flavorful!" },
-    { id: 3, name: "naruto", restaurant: "Ramen-ya", image: "/home/qilma/code_challenge/ramen-rating-app/naruto.jpg" }]
+    { id: 3, name: "naruto", restaurant: "Ramen-ya", image: "/home/qilma/code_challenge/ramen-rating-app/naruto.jpg" , rating: 3, comment: "Good, but not great" },
+    { id: 4, name: "kojiro", restaurant: "Ramen-ya", image: "/home/qilma/code_challenge/ramen-rating-app/kojiro.jpg " ,rating:5 ,comment:"nice dish"},
+    {id: 5, name: "nirvana", restaurant: "Ramen-ya", image:"./home/qilma/code_challenge/-rating-app/nirvana.jpg" ,rating: 3, comment: "nice, but not great" }
+ ]
     
     let selectedRamenId = null;
     
@@ -17,22 +20,19 @@ const ramens = [
             img.alt = ramen.name;
             img.addEventListener('click', () => handleClick(ramen));
             menu.appendChild(img);
-        });
+        })
     }
     
     function handleClick(ramen) {
-        const detail = document.getElementById('ramen-detail');
-        detail.querySelector('.detail-image').src = ramen.image;
-        detail.querySelector('.name').textContent = ramen.name;
-        detail.querySelector('.restaurant').textContent = ramen.restaurant;
-        detail.querySelector('.rating').textContent = ramen.rating ? `Rating: ${ramen.rating}` : '';
-        detail.querySelector('.comment').textContent = ramen.comment || '';
-        
-        // Show edit and delete buttons
-        document.getElementById('edit-btn').style.display = 'block';
-        document.getElementById('delete-btn').style.display = 'block';
-        document.getElementById('edit-ramen').style.display = 'none';
-        selectedRamenId = ramen.id;
+        const detailDiv = document.querySelector("#ramen-detail");
+    
+    detailDiv.innerHTML = `
+        <img src="${ramen.image}" alt="${ramen.name}" style="width: 300px; border-radius: 5px;">
+        <h2>${ramen.name}</h2>
+        <h3>Restaurant: ${ramen.restaurant}</h3>
+        <p>Rating: ${ramen.rating}</p>
+        <p>Comment: ${ramen.comment}</p>
+    `;
     }
     
     function addSubmitListener() {

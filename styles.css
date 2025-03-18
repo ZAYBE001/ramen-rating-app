@@ -1,4 +1,4 @@
-body {background-color: antiquewhite;}
+body {background-color: rgb(241, 231, 218);}
 h1 {color: rgba(233, 162, 9, 0.877);
     text-align: center;
      margin: 20px;
@@ -9,7 +9,6 @@ img { display: flex-box;
      padding-top: 20px;
      width: 200px;
      height: 200px;
-     border-radius: 60%;
      align-items: center;
      flex-direction: row;
      justify-content: center;
