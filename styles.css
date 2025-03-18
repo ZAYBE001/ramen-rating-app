@@ -9,13 +9,13 @@ img { display: flex-box;
      padding-top: 20px;
      width: 200px;
      height: 200px;
-     border-radius: 50%;
+     border-radius: 60%;
      align-items: center;
      flex-direction: row;
      justify-content: center;
 }
 div { display: flex;
-     flex-direction: column;
+     flex-direction: row;
      justify-content: center;
      align-items: center;
      margin: 20px;
@@ -28,4 +28,11 @@ form { display: flex;
      align-items: center;
      margin: 20px;
      padding-top: 20px;
+}
+button { display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: 5px;
+     padding-top: 5px 10px;
 }
