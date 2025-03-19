@@ -29,7 +29,7 @@ const ramens = [
     }
     
     function addSubmitListener() {
-        document.addEventListener('DOMContentLoaded', () => {
+        
             document.querySelector('form').addEventListener('submit', e => {
                 e.preventDefault();
     
@@ -53,7 +53,7 @@ const ramens = [
     
                 e.target.reset(); 
             });
-        });
+        
     }
     function displayRamens() {
         ramens.forEach(ramen => {
