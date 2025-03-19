@@ -29,7 +29,7 @@ const ramens = [
     }
     
     function addSubmitListener() {
-        console.log('form')
+        console.log( document.querySelector('form'))
             document.querySelector('form').addEventListener('submit', e => {
                 e.preventDefault();
     
