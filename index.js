@@ -38,11 +38,11 @@ const ramens = [
     document.querySelector('form').addEventListener('submit', e => {
         e.preventDefault();
 
-        const name = document.getElementById('ramen-name').value;
-        const restaurant = document.getElementById('ramen-restaurant').value;
-        const image = document.getElementById('ramen-image').value;
-        const rating = document.getElementById('ramen-rating').value;
-        const comment = document.getElementById('ramen-comment').value;
+        const name = document.getElementById('Ramen Name').value;
+        const restaurant = document.getElementById('Restaurant').value;
+        const image = document.getElementById('Image URL').value;
+        const rating = document.getElementById('Rating ').value;
+        const comment = document.getElementById('Comment').value;
 
         if (!name || !restaurant || !image || !rating || !comment) {
             alert("Please fill out all fields!"); 
